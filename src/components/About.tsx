@@ -14,7 +14,6 @@ const Font = Roboto_Mono({
 }
 )
 
-
 export default function About() {
     return (
         <div className=" my-16  container flex flex-col justify-center items-center ">
@@ -25,7 +24,7 @@ export default function About() {
             
             <div className=" flex flex-col gap-5 justify-center items-center">
                 <div>
-                    <h1 className={`${Font.className} font-bold text-6xl`}>
+                    <h1 className={`${Font.className} font-bold text-4xl sm:text-5xl ms:text-6xl `}>
                         - My Blog
                     </h1>
                 </div>

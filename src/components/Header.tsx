@@ -1,10 +1,17 @@
 "use client"
 import { Roboto_Mono } from "next/font/google"
 import Link from "next/link";
+import { FaHome } from "react-icons/fa";
+import { AiFillBulb } from "react-icons/ai";
+import { FaBlog } from "react-icons/fa";
+import { MdConnectWithoutContact } from "react-icons/md";
+
+import Container from "./Container";
 import { CgMenu } from "react-icons/cg";
 import { CgMenuMotion } from "react-icons/cg";
 import { useState } from "react";
 const Font = Roboto_Mono({
+    
     subsets: ["latin"],
     weight: ['700']
 }
@@ -16,20 +23,22 @@ export default function Header() {
     }
     return (
         <div>
-            <header className="bg-gray-50">
-                <div className="xl:container mx-auto flex flex-row my-5 justify-between backdrop-blur border-b-2  supports-[backdrop-filter]:bg-background/60  text-center py-3">
+            
+            <header className=" bg-gray-50 w-full z-10 top-0 fixed">
+            <Container>
+                <div className=" mx-auto flex flex-row my-5 justify-between  border-b-2  text-center ">
 
                     <div>
                         <Link href={"/"}
-                            className={` ${Font.className} font-bold uppercase text-4xl`}>Blog Side</Link>
+                            className={` ${Font.className} font-bold uppercase text-4xl`}>Blogs Side</Link>
                     </div>
 
                     {/* Navbar */}
-                    <div className=" hidden md:flex space-x-4  ">
-                        <Link className="text-black hover:text-blue-950 hover:underline text-xl" href="/">Home </Link>
-                        <Link className="text-black hover:text-blue-950 hover:underline text-xl" href="/aboutPage">About</Link>
-                        <Link className="text-black hover:text-blue-950 hover:underline text-xl" href="/blogPage">Blogs</Link>
-                        <Link className="text-black hover:text-blue-950 hover:underline text-xl" href="/contactPage">Contact</Link>
+                    <div className=" hidden md:flex gap-5 ">
+                        <Link className="text-black hover:text-blue-950 justify-center items-center hover:underline text-xl flex gap-2 " href="/"><FaHome size={20}/> Home </Link>
+                        <Link className="text-black justify-center items-center hover:text-blue-950 hover:underline text-xl  flex gap-2" href="/aboutPage"><AiFillBulb size={20}/> About</Link>
+                        <Link className="text-black hover:text-blue-950 justify-center items-center  hover:underline text-xl  flex gap-2" href="/blogPage"><FaBlog size={20}/> Blogs</Link>
+                        <Link className="text-black justify-center items-center  hover:text-blue-950 hover:underline text-xl  flex gap-2" href="/contactPage"><MdConnectWithoutContact size={20}/> Contact</Link>
                     </div>
 
                     {/* Hamburger  */}
@@ -40,16 +49,18 @@ export default function Header() {
                 </div>
                 {navbar && (
                     <div className="md:hidden  bg-transparent p-4  flex flex-col  justify-center items-center gap-3 ">
-                        <Link href="/" className="block text-black text-bold text-[20px]  py-2 hover:text-blue-950 hover:underline" onClick={handleNavbar}>Home</Link>
+                        <Link href="/" className=" justify-center items-center text-black  flex gap-2 text-bold text-[20px]  py-2 hover:text-blue-950 hover:underline" onClick={handleNavbar}><FaHome size={20}/> Home</Link>
 
-                        <Link href="/aboutPage" className="block text-black  text-bold text-[20px]  py-2 hover:text-blue-950 hover:underline" onClick={handleNavbar}>About</Link>
+                        <Link href="/aboutPage" className=" flex gap-2 text-black justify-center items-center  text-bold text-[20px]  py-2 hover:text-blue-950 hover:underline" onClick={handleNavbar}><AiFillBulb size={20}/> About</Link>
 
-                        <Link href="/blogPage" className="block text-black  text-bold text-[20px]  py-2  hover:text-blue-950 hover:underline" onClick={handleNavbar}>Blogs</Link>
+                        <Link href="/blogPage" className=" justify-center items-center flex gap-2 text-black  text-bold text-[20px]  py-2  hover:text-blue-950 hover:underline" onClick={handleNavbar}><FaBlog size={20}/> Blogs</Link>
 
-                        <Link href="/contactPage" className="block text-black  text-bold text-[20px]  py-2 hover:text-blue-950 hover:underline" onClick={handleNavbar}>Contact</Link>
+                        <Link href="/contactPage" className="justify-center items-center  flex gap-2 text-black  text-bold text-[20px]  py-2 hover:text-blue-950 hover:underline" onClick={handleNavbar}><MdConnectWithoutContact  size={20}/>Contact</Link>
                     </div>
                 )}
+                 </Container>
             </header>
+           
         </div>
     )
 }

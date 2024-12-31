@@ -4,13 +4,14 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import Container from "@/components/Container";
 
         
 
 export default function Contact() {
     return (
-        <div>
-        <div className="mt-24 my-40 flex flex-col justify-center items-center text-center gap-10" >
+        <Container>
+        <div className="mt-32 my-40 flex flex-col justify-center items-center text-center gap-10" >
             {/* Image */}
             <div>
                 <Image src={"/images/contact.jpg"}
@@ -47,6 +48,6 @@ export default function Contact() {
             </div>
         </div>
             <Comment />
-        </div>
+        </Container>
     )
 }

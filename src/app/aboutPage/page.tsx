@@ -7,6 +7,7 @@ const Font2 = Dancing_Script({
     weight: ['700', '600', '500', '400']
 })
 import { Roboto_Mono } from "next/font/google"
+import Container from "@/components/Container"
 
 const Font = Roboto_Mono({
     subsets: ["latin"],
@@ -17,8 +18,9 @@ const Font = Roboto_Mono({
 
 export default function About() {
     return (
-        <div className=" my-16  container flex flex-col justify-center items-center ">
-            <h1 className={`${Font2.className} border-b-2 font-bold text-8xl`}>
+        <Container>
+        <div className=" my-16  flex flex-col justify-center items-center ">
+            <h1 className={`${Font2.className} mt-20 border-b-2 font-bold text-8xl`}>
                 About
             </h1>
 
@@ -26,7 +28,7 @@ export default function About() {
             <div className=" my-16  container  flex flex-col justify-center items-center md:flex-row gap-10 md:justify-between ">
                 <div className=" flex flex-col gap-5 justify-center items-center">
                     <div>
-                        <h1 className={`${Font.className} font-bold text-6xl`}>
+                        <h1 className={`${Font.className} font-bold text-center text-6xl`}>
                             - About Blog
                         </h1>
                     </div>
@@ -58,7 +60,7 @@ export default function About() {
                 {/* Content */}
                 <div className=" flex flex-col gap-5 justify-center items-center">
                     <div>
-                        <h1 className={`${Font.className} font-bold text-6xl`}>
+                        <h1 className={`${Font.className} font-bold text-center text-6xl`}>
                             - About blog
                         </h1>
                     </div>
@@ -74,7 +76,7 @@ export default function About() {
 
             {/* Section 3 */}
             <div className=" my-16  container  flex flex-col justify-center items-center md:flex-row gap-10 md:justify-between ">
-                <div className=" flex flex-col gap-5 justify-center items-center">
+                <div className=" flex flex-col gap-5 justify-center text-center items-center">
                     <div>
                         <h1 className={`${Font.className} font-bold text-6xl`}>
                             - About Blog
@@ -99,6 +101,6 @@ export default function About() {
             <Comment/>
         </div>
 
-
+        </Container>
     )
 }

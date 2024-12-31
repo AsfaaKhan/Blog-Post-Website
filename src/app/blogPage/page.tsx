@@ -2,6 +2,7 @@ import BlogCard from "@/components/BlogCard";
 import { client } from "@/sanity/lib/client";
 import { Dancing_Script } from "next/font/google"
 import Comment from "@/components/Comment";
+import Container from "@/components/Container";
 
 const Font2 = Dancing_Script({
     subsets: ["latin"],
@@ -20,10 +21,10 @@ export default async function Home() {
 //   console.log(posts);
   
   return (
-    <div>
+    <Container>
       {/* Blogs */}
       <main className="flex min-h-screen flex-col ">
-        <h1 className={`text-4xl font-bold text-bolg my-12 text-center text-blue-950 dark:text-white sm:text-5xl lg:text-8xl underline ${Font2.className}`}>
+        <h1 className={`text-4xl font-bold text-bolg my-12 mt-28 text-center text-blue-950 dark:text-white sm:text-5xl lg:text-8xl underline ${Font2.className}`}>
           Trending Topics
         </h1>
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -38,7 +39,7 @@ export default async function Home() {
 
       {/* Comment */}
       <Comment/>
-    </div>
+    </Container>
 
   );
 }

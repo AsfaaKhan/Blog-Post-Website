@@ -4,6 +4,7 @@ import { urlForImage } from "@/sanity/lib/image";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 import Comment from "@/components/Comment";
+import Container from "@/components/Container";
 
 export const revalidate = 10 //seconds
 
@@ -18,7 +19,8 @@ export default async function page({ params: { slug } }: { params: { slug: strin
 
 
   return (
-    <article className="mt-12 mb-24 px-2 2xl:px-12 flex flex-col gap-y-8">
+    <Container>
+    <article className="mt-32 mb-24 px-2 2xl:px-12 flex flex-col gap-y-8">
 
       {/* Blog Title */}
       <h1 className="text-xl xs:text-3xl lg:text-5xl font-bold text-purple-950 dark:text-white">
@@ -82,5 +84,6 @@ export default async function page({ params: { slug } }: { params: { slug: strin
       {/* Comment */}
       <Comment />
     </article>
+    </Container>
   );
 }

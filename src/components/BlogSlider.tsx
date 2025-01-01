@@ -32,9 +32,7 @@ export default function Slider() {
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                         <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-                        {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button> */}
+
                     </div>
 
                     {/* The slideshow/carousel  */}
@@ -43,47 +41,38 @@ export default function Slider() {
                             <Image src="/images/13.jpg" alt="Los Angeles" width={500} height={500} className="d-block w-100" />
                             <div className="carousel-caption">
                                 <h3>AI in the Metaverse</h3>
-                                <p>Explore The Topics Related To These Topics</p>
+                                <p>Explore The Topics Related To this!</p>
                             </div>
 
                         </div>
                         <div className="carousel-item ">
                             <Image src="/images/5.jpg" alt="Los Angeles" width={500} height={500} className="d-block w-100" />
                             <div className="carousel-caption">
-                                <h3>AI in the Metaverse: Transforming Virtual Worlds</h3>
-                                <p>Explore The Topics Related To These Topics</p>
+                                <h3>AI in the Metaverse</h3>
+
+                                <p>Explore The Topics Related To this!</p>
                             </div>
                         </div>
 
                         <div className="carousel-item ">
                             <Image src="/images/15.jpg" alt="Los Angeles" width={500} height={500} className="d-block w-100" />
                             <div className="carousel-caption">
-                                <h3>AI in the Metaverse: Transforming Virtual Worlds</h3>
-                                <p>Explore The Topics Related To These Topics</p>
+                                <h3>AI in the Metaverse</h3>
+
+                                <p>Explore The Topics Related To this!</p>
                             </div>
 
                         </div>
                         <div className="carousel-item ">
                             <Image src="/images/17.jpg" alt="Los Angeles" width={500} height={500} className="d-block w-100" />
                             <div className="carousel-caption">
-                                <h3>AI in the Metaverse: Transforming Virtual Worlds</h3>
-                                <p>Explore The Topics Related To These Topics</p>
+                                <h3>AI in the Metaverse</h3>
+
+                                <p>Explore The Topics Related To this!</p>
                             </div>
 
                         </div>
-                        {/* <div className="carousel-item ">
-                        <Image src="/images/12.jpg" alt="Los Angeles" width={500} height={500} className="d-block w-100" />
-                       
-                    </div> */}
 
-                        {/* <div className="carousel-item">
-                        <Image src="/images/11.jpg" alt="Chicago" width={500} height={500} className="d-block w-100" />
-                        
-                    </div> */}
-                        {/* <div className="carousel-item">
-                        <Image src="/images/bg.jpg" alt="New York" width={500} height={500} className="d-block w-100" />
-                        
-                    </div> */}
                     </div>
 
                     {/* Left and right controls/icons  */}

@@ -10,7 +10,7 @@ export default function Footer(){
             <div className="container mx-auto flex  flex-col justify-center items-center py-12">
 
                 <div className="flex-flex-row justify-center items-center  ">
-                <div className=" flex gap-5 ">
+                <div className=" flex gap-2 ">
                         <Link className="text-slate-500 hover:text-blue-950 justify-center items-center hover:underline text-xl flex gap-2 " href="/"> Home </Link>
                         <Link className="text-slate-500 justify-center items-center hover:text-blue-950 hover:underline text-xl  flex gap-2" href="/aboutPage"> About</Link>
                         <Link className="text-slate-500 hover:text-blue-950 justify-center items-center  hover:underline text-xl  flex gap-2" href="/blogPage"> Blogs</Link>

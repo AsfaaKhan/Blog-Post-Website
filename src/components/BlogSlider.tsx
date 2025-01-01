@@ -42,7 +42,7 @@ export default function Slider() {
                         <div className="carousel-item active">
                             <Image src="/images/13.jpg" alt="Los Angeles" width={500} height={500} className="d-block w-100" />
                             <div className="carousel-caption">
-                                <h3>AI in the Metaverse: Transforming Virtual Worlds</h3>
+                                <h3>AI in the Metaverse</h3>
                                 <p>Explore The Topics Related To These Topics</p>
                             </div>
 

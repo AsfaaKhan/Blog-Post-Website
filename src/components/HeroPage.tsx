@@ -14,8 +14,8 @@ const Font = Roboto_Mono({
 )
 export default function HeroPage() {
     return (
-        <div className="bg-[url('/images/bg.jpg')]  mt-10 bg-cover bg-center bg-no-repeat h-[300px] sm:h-[400px] md:h-[500px] lg:[800px] ">
-            <div className="flex mt-34 flex-col gap-8 justify-center items-center text-center pt-[100px]">
+        <div className="bg-[url('/images/bg.jpg')]  mt-10 bg-cover bg-center bg-no-repeat h-[300px] sm:h-[400px] md:h-[500px] lg:[800px] flex justify-center items-center text-center ">
+            <div className="flex  flex-col gap-8 justify-center items-center text-center">
                 <div className="flex justify-center items-center text-center">
                     <h1 className={`${Font.className}  text-4xl sm:text-6xl md:text-8xl font-extrabold  text-blue-950 `}>
                         CLICK - WORTHY

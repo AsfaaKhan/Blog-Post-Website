@@ -26,7 +26,7 @@ export default function Header() {
             
             <header className=" bg-gray-50 w-full z-10 top-0 fixed">
             <Container>
-                <div className=" mx-auto flex flex-row my-2 justify-between  border-b-2  text-center ">
+                <div className="py-2 mx-auto flex flex-row my-2 justify-between  border-b-2  text-center ">
 
                     <div>
                         <Link href={"/"}

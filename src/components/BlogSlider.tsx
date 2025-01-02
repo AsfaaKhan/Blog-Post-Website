@@ -9,7 +9,7 @@ const Font2 = Dancing_Script({
 })
 
 import { Roboto_Mono } from "next/font/google"
-import Container from "./Container";
+// import Container from "./Container";
 
 const Font = Roboto_Mono({
     subsets: ["latin"],
@@ -22,7 +22,7 @@ const Font = Roboto_Mono({
 export default function Slider() {
     return (
         <div className="mt-28 mb-28">
-            <Container>
+
                 {/* Carousel  */}
                 <div id="demo" className="carousel slide" data-bs-ride="carousel">
 
@@ -82,8 +82,7 @@ export default function Slider() {
                     <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
                         <span className="carousel-control-next-icon"></span>
                     </button>
-                </div>
-            </Container>
+                </div>  
         </div>
     )
 }
